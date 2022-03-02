@@ -4,8 +4,6 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Capstone 1</title>
-	<!-- BOOTSTRAP -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">	
 
 	<!-- external css -->
 	<link rel="stylesheet" href="./style.css" type="text/css">
@@ -13,11 +11,41 @@
 	<!-- Font -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+	<!-- Bootstrap Dependencies -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
 </head>
 <body>
 
-    <!--Header(start)-->
+<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="nav1">
+	  <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarToggler">
+	      <a class="navbar-logo p-5" href="#home"><img src="./images/strawberry.png" height="60px" alt="logo" id="strawberry"></a>
+	      <ul class="navbar-nav ml-auto mt-lg-0">
+	          <li class="nav-item">
+	          <a class="nav-link" href="#home">Home</a>
+	          </li>
+	          <li class="nav-item">
+	          <a class="nav-link" href="#aboutme">About Me</a>
+	          </li>
+	          <li class="nav-item">
+	          <a class="nav-link" href="#projects">Projects</a>
+	          </li>
+	          <li class="nav-item">
+	          <a class="nav-link" href="#contact">Contact</a>
+	          </li>
+	      </ul>
+	  </div>
+	</nav>
+<!-- End of Navbar -->
+
+
+<!--Header
     <table id="header" border="0" width="100%"
         cellpadding="0" cellspacing="0" bgcolor="##6DD3CE">
         <tr>
@@ -88,19 +116,18 @@
             </td>
         </tr>
     </table>
-    <!--Header(end)-->
+ -->
 
  
  
-    <!--About(start)-->
-    <table id="about" border="0" width="100%"
-        cellpadding="0" cellspacing="0" bgcolor="#C8E9A0">
+<!-- About -->
+    <table id="about" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#C8E9A0">
         <tr>
             <td>
-                <table border="0" cellpadding="15"
+                <table border="0" cellpadding="45"
                     cellspacing="0" width="80%" align="center">
                     <tr>
-                        <td height="180" align="center"
+                        <td height="300" align="center"
                             valign="middle" colspan="2">
                             <font face="Poppins" size="7"
                                 color="#A13D63">
@@ -112,7 +139,7 @@
  
                     <tr>
                         <td width="40%">
-                            <img src="./images/emoji.jpg">
+                            <img src="./images/emoji.jpg" class="rounded-circle img-fluid">
                         </td>
  
                         <td width="60%">
@@ -129,36 +156,59 @@
             </td>
         </tr>
     </table>
-    <!--About(end)-->
+<!-- End of About -->
  
  
-    <!--Projects(start)-->
-    <table id="projects" border="0" width="100%"
-        cellpadding="0" cellspacing="0" bgcolor="#C8E9A0">
-        <tr>
-            <td>
-                <table border="0" cellpadding="15"
-                    cellspacing="0" width="80%" align="center">
-                    <tr>
-                        <td height="180" align="center"
-                            valign="middle" colspan="2">
-                            <font face="Poppins" size="7"
-                                color="#A13D63">
-                                Projects
-                            </font>
-                            <hr color="#A13D63" width="90">
-                        </td>
+<!-- Projects -->
                     
-                            
 
-
-
+	<table id="projects" border="0" width="100%"
+		cellpadding="0" cellspacing="0" bgcolor="#C8E9A0">
+		<tr>
+			<td>
+				<table border="0" cellpadding="15"
+					cellspacing="0" width="80%" align="center">
+					<tr>
+						<td height="180" align="center"
+							valign="middle" colspan="2">
+							<font face="Poppins" size="7"
+								color="#A13D63">
+								Projects
+							</font>
+							<hr color="#A13D63" width="90">
+						</td>
+					</tr>
+				</table>
+				<div id="sampleproject">
+					<div class="row my-5 mx-auto">
+			            <div class="text-center col-md-4 order-1 p-3">
+			                <div class="order-1 p-3 mx-auto">
+			                    <img src="./images/photo1.jpg" width="100%">
+			                </div>
+			            </div>
+			     
+			       		<div class="text-center col-md-4 order-2 p-3">
+			                <div class="order-1 p-3 mx-auto">
+			                    <img src="./images/photo2.jpg" width="100%">
+			                </div>
+			          	</div>
+			   
+			            <div class="text-center col-md-4 order-3 p-3">
+			                  <div class="order-1 order-md-1 p-3 mx-auto">
+			                        <img src="./images/photo3.jpg" width="100%">
+			                  </div>
+			         	</div>
+					</div>
+				</div>
+			</td>
+		</tr>
+	</table>
 
              
-    <!--Projects(end)-->
+<!-- End of Projects -->
  
  
-    <!--Contact(start)-->
+<!-- Contact -->
     <table id="contact" border="0" width="100%"
         cellpadding="0" cellspacing="0" bgcolor="#C8E9A0">
         <tr>
@@ -265,13 +315,19 @@
             </td>
         </tr>
     </table>
-    <!--Contact(end)-->
- 
-<!-- footer -->
-	<footer>
-		<p class="text-center text-white">Anthea Elaine Bonifacio</p>
-		<p class="text-center text-white">&copy; All Rights Reserved 2021</p>
-	</footer>
+<!-- End of Contact -->
+
+
+<!-- Footer -->
+<section id="sectionf">
+    <footer>
+        <div class="text-light" id="footer">
+            <p class="text-center text-white">Anthea Elaine Bonifacio</p>
+            <p class="text-center text-white">&copy; All Rights Reserved 2022</p>
+        </div>
+    </footer>
+</section>
+<!-- End of Footer -->
 
 	<!-- JS Dependencies -->
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

@@ -2,6 +2,23 @@
 	font-family: "Poppins", monospace;
 }
 
+
+#nav1 {
+    background-color: #6DD3CE;
+    height: 80px;
+}
+
+#carouselExampleIndicators {
+	background-color: #C8E9A0;
+}
+
+#sampleproject {
+	background-color: #C8E9A0;
+}
+
 footer {
 	background-color: #6DD3CE;
+	height: 100px;
+	text-align: center;
+	padding-top: 15px;
 }
