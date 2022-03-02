@@ -1,1 +1,7 @@
-css
+*{
+	font-family: "Poppins", monospace;
+}
+
+footer {
+	background-color: #6DD3CE;
+}
